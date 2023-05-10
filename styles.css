@@ -1,0 +1,155 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+  
+  @import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap');
+
+
+
+/* || RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img{
+  display: block;
+  max-width: 100%;
+}
+  
+
+/* || BODY */
+
+body{
+  height: 100vh;
+  display:grid;
+  place-items:center;
+  line-height: 1;
+  background-color: hsl(228, 12%, 48%);
+}
+ 
+/* || MAIN */  
+  
+
+.product__card{
+  width: 90%;
+  max-width: 375px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  background-color: white;
+  margin: 1rem;
+}
+
+/* || CARD SIDE BAR */
+
+.product__image-desktop{
+  display: none;
+}
+
+.product__image-mobile{
+  
+  border-radius: 10px 10px 0 0;
+}
+
+/* || CARD MAIN */
+
+.product__card-main{
+  padding: 1.25rem;
+  
+}
+
+.product__type{
+  font-family:"Montserrat";
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: .25rem;
+  font-size: .825rem;
+  color: #6B6F73;
+  
+}
+
+.product__name{
+  font-family:"fraunces";
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  
+}
+
+.product__description{
+  font-family: "Montserrat";
+  line-height: 1.5;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  color: #6B6F73;
+}
+
+.product__price {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+
+.product__price-discounted{
+  font-family: "fraunces";
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: hsl(158, 36%, 37%);
+  
+}
+
+.product__price-original {
+  font-family: "Montserrat";
+  font-size: .825rem;
+  font-weight: 500;
+  text-decoration: line-through;
+  
+}
+
+/*|| BUTTON */
+
+.btn{
+  display: block;
+  text-decoration: none;
+  padding:1rem;
+  text-align: center;
+  margin-top: 1.25rem;
+  border-radius: 5px;
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: .825rem;
+  background-color: hsl(158, 36%, 37%);
+  color:hsl(30, 38%, 92%);
+  cursor: pointer;
+}
+
+a:hover ,
+a:active {background-color: hsl(212, 21%, 14%);}
+
+/* || FOOTER */
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+/* || MEDIA QUERRY */
+
+@media (min-width:650px) {
+  .product__card {
+    flex-direction:row;
+    max-width: 575px;}
+
+  .product__card-main {
+      width: 50%;}
+
+  .product__card-sidebar{
+      width: 50%;}
+    
+  .product__image-mobile{
+    display:none ;}
+
+  .product__image-desktop{
+    display: block;
+    border-radius: 10px 0 0 10px;}
+    
+}
