@@ -124,6 +124,12 @@ body{
   cursor: pointer;
 }
 
+.logo{
+  display:inline-block;
+  height: .825rem;
+}
+
+
 a:hover ,
 a:active {background-color: hsl(212, 21%, 14%);}
 
